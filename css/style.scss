@@ -17,7 +17,7 @@ h3 {
   color: #2c3333;
   font-size: 22px;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 48px;
   display: block;
   text-transform: uppercase;
   border-bottom: 1px solid #dbdee6;
@@ -313,6 +313,7 @@ h3 {
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 20px;
   a {
     color: #ffffff;
     text-decoration: none;
@@ -354,8 +355,12 @@ h3 {
   background-position: center center;
   display: none;
 }
+.news {
+  display: flex;
+  justify-content: space-between;
+}
 .news__left-side {
-  width: 265px;
+  width: 23%;
 }
 .news__items {
   margin-bottom: 15px;
@@ -427,8 +432,30 @@ h3 {
     line-height: 18px;
   }
 }
-
-
+.right-side {
+  width: 74%;
+}
+.promo-title {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: #131a1a;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #e3e5eb;
+  border-radius: 10px;
+}
+.promo-title_black {
+  font-weight: 500;
+}
+.promo-title_blue {
+  color: #4673ab;
+  font-weight: 500;
+}
 
 
 
