@@ -12,6 +12,15 @@ a {
   font-size: 13px;
   color: #4673ab;
   font-weight: 300; }
+  a:hover {
+    text-decoration: none; }
+
+h2 {
+  color: #040d0d;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase; }
 
 h3 {
   color: #2c3333;
@@ -327,7 +336,8 @@ h3 {
 
 .news {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 50px; }
 
 .news__left-side {
   width: 23%; }
@@ -410,7 +420,8 @@ h3 {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #e3e5eb;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-bottom: 32px; }
 
 .promo-title_black {
   font-weight: 500; }
@@ -418,5 +429,252 @@ h3 {
 .promo-title_blue {
   color: #4673ab;
   font-weight: 500; }
+
+.slider {
+  height: 368px;
+  position: relative;
+  background-image: url("../img/slider-bg.png");
+  padding: 45px 295px 40px 66px; }
+  .slider .slider__img {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .slider ul {
+    margin: 30px 0 30px 13px;
+    padding: 0; }
+    .slider ul li {
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 26px; }
+
+.slider__arrow_left {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -22px;
+  cursor: pointer; }
+
+.slider__arrow_right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -22px;
+  cursor: pointer; }
+
+.slider__title {
+  text-transform: uppercase; }
+
+.slider__title_orange {
+  color: #ff5816;
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 36px;
+  display: block;
+  font-style: normal; }
+
+.slider__title_white {
+  color: #ffffff;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 32px;
+  display: block;
+  font-style: normal; }
+
+.slider__title_small {
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  font-style: italic; }
+
+.content-button {
+  width: 154px;
+  height: 40px;
+  box-shadow: inset 0 -3px 0 rgba(0, 1, 1, 0.23);
+  border-radius: 7px;
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+  color: #4673ab;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.section {
+  margin-bottom: 50px; }
+
+.section-title {
+  color: #040d0d;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-top: 1px solid lightgray;
+  margin-bottom: 40px; }
+
+.section-title_margin {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -11px; }
+  .section-title_margin span {
+    background-color: white;
+    padding-right: 10px; }
+  .section-title_margin a {
+    margin-top: -3px;
+    display: inline-block;
+    font-size: 13px;
+    background-color: white;
+    padding-left: 20px;
+    text-transform: none; }
+
+.section__slider {
+  display: flex;
+  padding: 0 60px;
+  justify-content: space-between;
+  position: relative; }
+
+.section__slider-item {
+  position: relative;
+  width: 233px;
+  height: 388px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dbdee6;
+  padding: 32px 17px 21px 21px; }
+  .section__slider-item:hover {
+    border: 1px solid #ff5e1e; }
+  .section__slider-item a {
+    color: #4673ab;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration: underline; }
+    .section__slider-item a:hover {
+      color: #ff5e1e; }
+
+.section__slider-img {
+  height: 170px; }
+
+/*----- sticers -----*/
+.item__sticker {
+  width: 34px;
+  height: 43px;
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 43px;
+  text-transform: uppercase; }
+
+.item__sticker_new {
+  background-image: url("../img/icons/flag_new.png"); }
+
+.item__sticker_recommended {
+  background-image: url("../img/icons/flag_recommended.png"); }
+
+.item__sticker_discount {
+  background-image: url("../img/icons/flag_discount.png"); }
+
+.slider-item__price {
+  display: block;
+  color: #1a2222;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px; }
+
+.slider-item__price_current {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 5px; }
+
+.slider-item__price_old {
+  font-size: 14px;
+  color: #ff5816;
+  font-weight: 300;
+  text-decoration: line-through; }
+
+.slider-item__footer {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center; }
+  .slider-item__footer .detailed {
+    color: #4673ab;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-left: 15px;
+    display: block;
+    text-decoration: underline; }
+    .slider-item__footer .detailed:hover {
+      text-decoration: none;
+      color: #4673ab; }
+
+.button-buy {
+  width: 114px;
+  height: 40px;
+  padding-left: 20px;
+  background-image: url("../img/icons/basket-button_icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px left 12px;
+  box-shadow: inset 0 -3px 0 rgba(0, 1, 1, 0.23);
+  border-radius: 7px;
+  background-color: #ff5e1e;
+  color: #fff !important;
+  font-weight: 500 !important;
+  display: block;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  text-align: center;
+  line-height: 40px !important;
+  text-transform: uppercase; }
+  .button-buy:hover {
+    box-shadow: inset 0 -3px 0 rgba(0, 1, 1, 0.23);
+    background-color: #4673ab; }
+
+.slider__arrow_left-small {
+  left: 0; }
+
+.slider__arrow_right-small {
+  right: 0; }
+
+/*----- item__stock -----*/
+.section__slider-item_stock {
+  align-items: start;
+  padding: 32px 0 21px 0; }
+  .section__slider-item_stock:hover {
+    border: 1px solid #ff5e1e; }
+  .section__slider-item_stock a {
+    color: #4673ab;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration: underline; }
+    .section__slider-item_stock a:hover {
+      color: #ff5e1e; }
+
+.stock__title {
+  padding: 0 17px 10px 21px; }
+  .stock__title a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px; }
+
+.stock__info {
+  padding: 0 17px 10px 21px;
+  color: #040d0d;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px; }
 
 /*# sourceMappingURL=style.css.map */
