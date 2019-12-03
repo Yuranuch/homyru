@@ -651,7 +651,7 @@ h3 {
 /*----- item__stock -----*/
 .section__slider-item_stock {
   align-items: start;
-  padding: 32px 0 21px 0; }
+  padding: 15px 0 15px 0; }
   .section__slider-item_stock:hover {
     border: 1px solid #ff5e1e; }
   .section__slider-item_stock a {
@@ -670,11 +670,91 @@ h3 {
     font-weight: 500;
     line-height: 22px; }
 
+.stock__img {
+  width: 123px; }
+
 .stock__info {
-  padding: 0 17px 10px 21px;
+  height: 119px;
+  overflow: hidden;
+  padding: 5px 17px 10px 21px;
   color: #040d0d;
   font-size: 13px;
   font-weight: 300;
   line-height: 18px; }
+
+.stock-timer {
+  display: flex;
+  height: 65px;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #dbdee6;
+  padding: 15px 17px 0 21px; }
+  .stock-timer > span {
+    color: #1a2222;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 13px; }
+
+.stock-timer__wrap {
+  width: 128px; }
+  .stock-timer__wrap img {
+    margin-bottom: -3px; }
+  .stock-timer__wrap > span {
+    color: #337500;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 10px 0 0 30px; }
+
+.stock-timer__value {
+  display: flex;
+  justify-content: space-around; }
+  .stock-timer__value span {
+    color: #7f8686;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 16px; }
+
+.stock__detailed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center !important; }
+  .stock__detailed a {
+    color: #4673ab;
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: underline; }
+
+.section__popular-goods {
+  display: flex;
+  justify-content: space-between; }
+
+.popular-good__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 268px; }
+  .popular-good__item a {
+    color: #4673ab;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration: underline;
+    text-transform: none; }
+
+.item__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 230px; }
 
 /*# sourceMappingURL=style.css.map */
