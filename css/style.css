@@ -8,6 +8,13 @@ body {
 div, a {
   box-sizing: border-box; }
 
+p {
+  color: #040d0d;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-bottom: 25px; }
+
 a {
   font-size: 13px;
   color: #4673ab;
@@ -916,5 +923,88 @@ h3 {
 .numbers__item-info_column {
   flex-direction: column;
   justify-content: center; }
+
+.rules-block__tabs a {
+  color: #ff5816;
+  padding: 0 25px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 43px;
+  line-height: 43px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #dbdee6;
+  text-decoration: none; }
+  .rules-block__tabs a:hover {
+    background: none; }
+  .rules-block__tabs a:hover span {
+    border-bottom: none;
+    color: #040d0d; }
+  .rules-block__tabs a span {
+    border-bottom: 1px dotted #ff5816;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px; }
+.rules-block__tabs a.active {
+  background: none !important; }
+  .rules-block__tabs a.active span {
+    color: #040d0d;
+    border-bottom: none; }
+
+.rules-block__steps {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 40px 0; }
+
+.step_item {
+  background-image: url("../img/icons/step-arrow_icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px right 0;
+  padding: 0 80px 0 0; }
+  .step_item > span {
+    color: #040d0d;
+    min-height: 35px;
+    padding: 0 0 0 42px;
+    display: inline-block;
+    background-image: url("../img/icons/phon-mini_icons.png");
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px; }
+    .step_item > span span {
+      font-weight: 500; }
+
+.last-step {
+  padding: 0;
+  background-image: none; }
+
+.step_item_confirm {
+  background-image: url("../img/icons/confirm_icon.png") !important; }
+
+.step_item_delivery {
+  background-image: url("../img/icons/delivery_icon.png") !important;
+  padding: 0 0 0 54px !important; }
+
+.step_item_purse {
+  background-image: url("../img/icons/purse_small.png") !important; }
+
+.service {
+  padding: 38px 0 30px 0;
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between; }
+  .service a {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #ff5816; }
+
+.service_left-side {
+  width: 48%; }
+
+.service_right-side {
+  width: 48%; }
 
 /*# sourceMappingURL=style.css.map */
