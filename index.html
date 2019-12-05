@@ -16,15 +16,23 @@
 <body>
 <div class="top-navigation-wrap">
     <div class="navigation-top">
-        <div class="navigation-top__item"><a class="navigation-top__item_first" href="#">Каталог</a></div>
-        <div class="navigation-top__item"><a class="navigation-top__item_second" href="#">О компании </a></div>
-        <div class="navigation-top__item"><a href="#">Оплата и доставка</a></div>
-        <div class="navigation-top__item"><a href="#">Гарантии и возврат</a></div>
-        <div class="navigation-top__item"><a href="#">Сотрудничество</a></div>
-        <div class="navigation-top__item"><a href="#">Услуги</a></div>
-        <div class="navigation-top__item"><a href="#">Решения </a></div>
-        <div class="navigation-top__item"><a href="#">Техподдержка</a></div>
-        <div class="navigation-top__item"><a class="navigation-top__item_last" href="#">Контакты</a></div>
+        <div class="navigation-top__adaptive-wrap">
+            <div class="navigation-top__item"><a class="navigation-top__item_first" href="#">Каталог</a></div>
+            <div class="navigation-top__item"><a class="navigation-top__item_second" href="#">О компании </a></div>
+            <div class="navigation-top__item"><a href="#">Оплата и доставка</a></div>
+            <div class="navigation-top__item"><a href="#">Гарантии и возврат</a></div>
+            <div class="navigation-top__item"><a href="#">Сотрудничество</a></div>
+            <div class="navigation-top__item"><a href="#">Услуги</a></div>
+            <div class="navigation-top__item"><a href="#">Решения </a></div>
+            <div class="navigation-top__item"><a href="#">Техподдержка</a></div>
+            <div class="navigation-top__item"><a class="navigation-top__item_last" href="#">Контакты</a></div>
+        </div>
+        <div class="burger-menu">
+            <div>
+                <img src="./img/icons/burger_icon.png" alt="">
+                <span>Меню</span>
+            </div>
+        </div>
     </div>
 </div>
 <div class="container">
@@ -33,7 +41,7 @@
             Ваш регион: <a href="#">Москва</a>
         </div>
         <div class="user-data__auth">
-            <a href="#">Войти </a>
+            <a class="enter" href="#">Войти </a>
             <a href="#">Личный кабинет</a>
         </div>
     </div>
@@ -43,6 +51,15 @@
                 ho<span>my</span>ru
             </a>
             <span>Оборудование и решения для VoIP</span>
+        </div>
+        <div class="logo_adaptive">
+            <a href="#">
+                ho<span>my</span>ru
+            </a>
+            <div class="contacts__phones_logo">
+                <span class="callback-phone callback-phone_small">+7 495 2-55-44-66</span>
+                <span class="contact-phone"><span>+7 903 111-11-11</span></span>
+            </div>
         </div>
         <div class="contacts">
             <div class="contacts__callback">
@@ -63,20 +80,29 @@
                 <span class="decision-content__caption">для экономных людей</span>
             </div>
             <div class="decision-search">
-                <input type="text" placeholder="Поиск по сайту" />
+                <input type="text" placeholder="Поиск по сайту"/>
                 <button>искать</button>
             </div>
         </div>
-        <div class="basket">
-            <div class="basket-display">
-                <div class="basket-content">
-                    <span class="basket-content__title">корзина</span>
-                    <span class="basket-content__total-count"><a href="#">4</a> / 4000р</span>
-                </div>
+        <div class="basket-wrap">
+            <div class="search_adaptive">
+                <img src="./img/icons/search_icon.png" alt="">
             </div>
-            <div class="basket-selected">
-                <a href="#" class="select"><span>Избранное</span></a>
-                <a href="#" class="compare"><span>Сравнение</span></a>
+            <div class="basket_adaptive">
+                <img src="./img/icons/basket-small.png" alt="">
+                <a href="#">info@homy.ru</a>
+            </div>
+            <div class="basket">
+                <div class="basket-display">
+                    <div class="basket-content">
+                        <span class="basket-content__title">корзина</span>
+                        <span class="basket-content__total-count"><a href="#">4</a> / 4000р</span>
+                    </div>
+                </div>
+                <div class="basket-selected">
+                    <a href="#" class="select"><span>Избранное</span></a>
+                    <a href="#" class="compare"><span>Сравнение</span></a>
+                </div>
             </div>
         </div>
     </div>
@@ -98,45 +124,46 @@
         <div class="news__left-side">
             <h3>Новости компании</h3>
             <div class="news__items">
-            <div class="news__item">
-                <div class="news__date">
-                    <img src="./img/small-pict.png" alt="">
-                    <div class="date">13</div>
-                    <span>октябрь</span>
+                <div class="news__item">
+                    <div class="news__date">
+                        <img src="./img/small-pict.png" alt="">
+                        <div class="date">13</div>
+                        <span>октябрь</span>
+                    </div>
+                    <div class="news__content">
+                        <a href="#">Новинка от «Элтекс» - точка доступа WEP-2ac</a>
+                        <span>Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.</span>
+                    </div>
                 </div>
-                <div class="news__content">
-                    <a href="#">Новинка от «Элтекс» - точка доступа WEP-2ac</a>
-                    <span>Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.</span>
+                <div class="news__item">
+                    <div class="news__date">
+                        <img src="./img/small-pict_2.png" alt="">
+                        <div class="date">13</div>
+                        <span>октябрь</span>
+                    </div>
+                    <div class="news__content">
+                        <a href="#">WiFi точка доступа от компании Grandstream!</a>
+                        <span>Уже скоро в продаже!</span>
+                    </div>
                 </div>
-            </div>
-            <div class="news__item">
-                <div class="news__date">
-                    <img src="./img/small-pict_2.png" alt="">
-                    <div class="date">13</div>
-                    <span>октябрь</span>
+                <div class="news__item">
+                    <div class="news__date">
+                        <img src="./img/small-pict.png" alt="">
+                        <div class="date">13</div>
+                        <span>октябрь</span>
+                    </div>
+                    <div class="news__content">
+                        <a href="#">Новинка от компании Grandstream!</a>
+                        <span>Скоро в продаже мощный маршрутизатор GWN7000!</span>
+                    </div>
                 </div>
-                <div class="news__content">
-                    <a href="#">WiFi точка доступа от компании Grandstream!</a>
-                    <span>Уже скоро в продаже!</span>
-                </div>
-            </div>
-            <div class="news__item">
-                <div class="news__date">
-                    <img src="./img/small-pict.png" alt="">
-                    <div class="date">13</div>
-                    <span>октябрь</span>
-                </div>
-                <div class="news__content">
-                    <a href="#">Новинка от компании Grandstream!</a>
-                    <span>Скоро в продаже мощный маршрутизатор GWN7000!</span>
-                </div>
-            </div>
             </div>
             <a href="#">Все новости</a>
         </div>
         <div class="right-side">
             <div class="promo-title">
-                <span class="promo-title_black">Более 2000 товаров</span> от 40+ производителей в одном магазине. <span class="promo-title_blue">Любые решения под ключ.</span>
+                <span class="promo-title_black">Более 2000 товаров</span> от 40+ производителей в одном магазине. <span
+                    class="promo-title_blue">Любые решения под ключ.</span>
             </div>
             <div class="slider">
                 <div class="slider__title">
@@ -150,10 +177,14 @@
                     <li>Гигабитный порт, встроенный модуль WiFi (802.11n) и Bluetooth 4.0, Miracast</li>
                 </ul>
                 <a href="#" class="content-button">подробнее</a>
-
                 <div class="slider__arrow_left"><img src="./img/icons/slider-left-arrow.svg" alt=""></div>
                 <div class="slider__arrow_right"><img src="./img/icons/slider-right-arrow.svg" alt=""></div>
-
+                <div class="slider__navigation-buttons">
+                    <a class="active" href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
                 <div class="slider__img"><img src="./img/slider_img.png" alt=""></div>
             </div>
         </div>
@@ -161,8 +192,14 @@
     <div class="section">
         <div class="section-title">
             <div class="section-title_margin">
-                <span>новинки</span>
+                <span>новинки <img src="./img/icons/arrow_decor.png" alt=""></span>
                 <a href="#">Все новинки</a>
+                <div class="section-title__slider-control">
+                    <div>
+                        <div class="slider-control__arrow "><img src="./img/icons/left-control_arrow.png" alt=""></div>
+                        <div class="slider-control__arrow "><img src="./img/icons/right-control_arrow.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section__slider">
@@ -182,10 +219,10 @@
                     <span class="slider-item__price_old"> 15 500 р.</span>
                 </div>
                 <div>
-                <div class="slider-item__footer">
-                    <a class="button-buy" href="#">Купить</a>
-                    <a class="detailed" href="#">Подробнее</a>
-                </div>
+                    <div class="slider-item__footer">
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="detailed" href="#">Подробнее</a>
+                    </div>
                 </div>
             </div>
             <div class="section__slider-item">
@@ -253,8 +290,14 @@
     <div class="section">
         <div class="section-title">
             <div class="section-title_margin">
-                <span>Рекомендуем</span>
-                <a href="#">Все рекомендации</a>
+                <span>Рекомендуем<img src="./img/icons/arrow_decor.png" alt=""></span>
+                <a href="#">Все рекомендации </a>
+                <div class="section-title__slider-control">
+                    <div>
+                        <div class="slider-control__arrow "><img src="./img/icons/left-control_arrow.png" alt=""></div>
+                        <div class="slider-control__arrow "><img src="./img/icons/right-control_arrow.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section__slider">
@@ -337,8 +380,14 @@
     <div class="section">
         <div class="section-title">
             <div class="section-title_margin">
-                <span>Распродажа</span>
+                <span>Распродажа <img src="./img/icons/arrow_decor.png" alt=""></span>
                 <a href="#">Все товары</a>
+                <div class="section-title__slider-control">
+                    <div>
+                        <div class="slider-control__arrow "><img src="./img/icons/left-control_arrow.png" alt=""></div>
+                        <div class="slider-control__arrow "><img src="./img/icons/right-control_arrow.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section__slider">
@@ -421,14 +470,19 @@
     <div class="section">
         <div class="section-title">
             <div class="section-title_margin">
-                <span>Распродажа</span>
+                <span>Акции <img src="./img/icons/arrow_decor.png" alt=""></span>
                 <a href="#">Все товары</a>
+                <div class="section-title__slider-control">
+                    <div>
+                        <div class="slider-control__arrow "><img src="./img/icons/left-control_arrow.png" alt=""></div>
+                        <div class="slider-control__arrow "><img src="./img/icons/right-control_arrow.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section__slider">
             <div class="slider__arrow_left slider__arrow_left-small"><img src="./img/icons/slider-left-arrow.svg" alt=""></div>
             <div class="slider__arrow_right slider__arrow_right-small"><img src="./img/icons/slider-right-arrow.svg" alt=""></div>
-
             <div class="section__slider-item section__slider-item_stock">
                 <div class="stock__title">
                     <a href="#">Название акции</a>
@@ -437,7 +491,8 @@
                     <img src="./img/stock-image_1.png" alt="">
                 </div>
                 <div class="stock__info">
-                    Важными преимуществом использования айпи телефона вместо обычного, является на порядок более низкая цена соединения.
+                    Важными преимуществом использования айпи телефона вместо обычного, является на порядок более низкая
+                    цена соединения.
                 </div>
                 <div class="stock-timer">
                     <span>Срок<br/> действия:</span>
@@ -482,7 +537,8 @@
                     <img src="./img/stock-image_3.png" alt="">
                 </div>
                 <div class="stock__info">
-                    Важными преимуществом использования айпи телефона вместо обычного, является на порядок более низкая цена соединения.
+                    Важными преимуществом использования айпи телефона вместо обычного, является на порядок более низкая
+                    цена соединения.
                 </div>
                 <div class="stock-timer">
                     <span>Срок<br/> действия:</span>
@@ -526,44 +582,49 @@
             </div>
         </div>
     </div>
-
-    <div class="section">
+    <div class="section section__popular">
         <div class="section-title">
             <div class="section-title_margin">
                 <span>Что покупают прямо сейчас</span>
             </div>
         </div>
-            <div class="section__popular-goods">
-                <div class="popular-good__item">
-                    <div class="item__image">
-                        <img src="./img/good-photo-large_1.png" alt="">
-                    </div>
-                    <a href="#">Замок дверной Samsung SHS-2320 XMK/EN</a>
+        <div class="section__popular-goods">
+            <div class="popular-good__item">
+                <div class="item__image">
+                    <img src="./img/good-photo-large_1.png" alt="">
                 </div>
-                <div class="popular-good__item">
-                    <div class="item__image">
-                        <img src="./img/good-photo-large_2.png" alt="">
-                    </div>
-                    <a href="#">GSM-VoIP шлюз OpenVox VoxStack VS-GW2120-4G</a>
+                <a href="#">Замок дверной Samsung SHS-2320 XMK/EN</a>
+            </div>
+            <div class="popular-good__item">
+                <div class="item__image">
+                    <img src="./img/good-photo-large_2.png" alt="">
                 </div>
-                <div class="popular-good__item">
-                    <div class="item__image">
-                        <img src="./img/good-photo-large_1.png" alt="">
-                    </div>
-                    <a href="#">Замок дверной Samsung SHS-2320 XMK/EN</a>
+                <a href="#">GSM-VoIP шлюз OpenVox VoxStack VS-GW2120-4G</a>
+            </div>
+            <div class="popular-good__item">
+                <div class="item__image">
+                    <img src="./img/good-photo-large_1.png" alt="">
                 </div>
-                <div class="popular-good__item">
-                    <div class="item__image">
-                        <img src="./img/good-photo-large_3.png" alt="">
-                    </div>
-                    <a href="#">Замок дверной Samsung SHS-2320 XMK/EN</a>
+                <a href="#">Замок дверной Samsung SHS-2320 XMK/EN</a>
+            </div>
+            <div class="popular-good__item">
+                <div class="item__image">
+                    <img src="./img/good-photo-large_3.png" alt="">
                 </div>
+                <a href="#">Замок дверной Samsung SHS-2320 XMK/EN</a>
             </div>
         </div>
-    <div class="section">
+    </div>
+    <div class="section section__brand">
         <div class="section-title">
             <div class="section-title_margin">
-                <span>Что покупают прямо сейчас</span>
+                <span>Наши ключевые бренды<img src="./img/icons/arrow_decor.png" alt=""></span>
+                <div class="section-title__slider-control">
+                    <div>
+                        <div class="slider-control__arrow "><img src="./img/icons/left-control_arrow.png" alt=""></div>
+                        <div class="slider-control__arrow "><img src="./img/icons/right-control_arrow.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section__brand-list">
@@ -583,36 +644,34 @@
                 <span>Наши сильные стороны</span>
             </div>
         </div>
-       <div class="section__strength-list">
-           <div class="strength-list__item">
-               <div class="strength-list__item-img">
-                   <img src="./img/strength_icons/dialogs-icon.png" alt="">
-               </div>
-               <span>Грамотная консультация по каждому товару</span>
-           </div>
-           <div class="strength-list__item">
-               <div class="strength-list__item-img">
-                   <img src="./img/strength_icons/purse.png" alt="">
-               </div>
-               <span>Любые способы <br>оплаты</span>
-           </div>
-           <div class="strength-list__item">
-               <div class="strength-list__item-img">
-                   <img src="./img/strength_icons/tools.png" alt="">
-               </div>
-               <span>Собственный сервисный центр</span>
-           </div>
-           <div class="strength-list__item">
-               <div class="strength-list__item-img">
-                   <img src="./img/strength_icons/pick_point.png" alt="">
-
-               </div>
-               <span>Разветвленная сеть самовывоза (Pickpoint)</span>
-           </div>
-       </div>
-
+        <div class="section__strength-list">
+            <div class="strength-list__item">
+                <div class="strength-list__item-img">
+                    <img src="./img/strength_icons/dialogs-icon.png" alt="">
+                </div>
+                <span>Грамотная консультация по каждому товару</span>
+            </div>
+            <div class="strength-list__item">
+                <div class="strength-list__item-img">
+                    <img src="./img/strength_icons/purse.png" alt="">
+                </div>
+                <span>Любые способы <br>оплаты</span>
+            </div>
+            <div class="strength-list__item">
+                <div class="strength-list__item-img">
+                    <img src="./img/strength_icons/tools.png" alt="">
+                </div>
+                <span>Собственный сервисный центр</span>
+            </div>
+            <div class="strength-list__item">
+                <div class="strength-list__item-img">
+                    <img src="./img/strength_icons/pick_point.png" alt="">
+                </div>
+                <span>Разветвленная сеть самовывоза (Pickpoint)</span>
+            </div>
+        </div>
     </div>
-    <div class="section">
+    <div class="section section-reason">
         <div class="section-title">
             <div class="section-title_margin">
                 <span>5 причин выбрать нашу компанию</span>
@@ -625,11 +684,21 @@
                 </div>
                 <div class="block-reason__content">
                     <ul>
-                        <li><span>1.5 беглых менеджера</span> по продажам со своим сайтом, имитирующие торговую компанию.</li>
-                        <li><span>Торговля серым, несертифицированным товаром</span>, что выливается в проблемы при гарантийном обслуживании.</li>
-                        <li><span>Менеджеры по продажам знакомы с оборудованием лишь на бумаге</span>, часто не знают, что они продают.</li>
-                        <li><span>Компании занимаются только продажей</span>, не проводят установку и настройку оборудования под ключ. Не оказывают техподдержку.</li>
-                        <li><span>Сложная процедура гарантийного ремонта и возврата товара в случае проблем</span>. Не понятно, куда обращаться по гарантии.</li>
+                        <li><span>1.5 беглых менеджера</span> по продажам со своим сайтом, имитирующие торговую
+                            компанию.
+                        </li>
+                        <li><span>Торговля серым, несертифицированным товаром</span>, что выливается в проблемы при
+                            гарантийном обслуживании.
+                        </li>
+                        <li><span>Менеджеры по продажам знакомы с оборудованием лишь на бумаге</span>, часто не знают,
+                            что они продают.
+                        </li>
+                        <li><span>Компании занимаются только продажей</span>, не проводят установку и настройку
+                            оборудования под ключ. Не оказывают техподдержку.
+                        </li>
+                        <li><span>Сложная процедура гарантийного ремонта и возврата товара в случае проблем</span>. Не
+                            понятно, куда обращаться по гарантии.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -640,17 +709,23 @@
                 <div class="block-reason__content">
                     <ul>
                         <li><span>Открытая компания</span> с полным штатом профильных специалистов</li>
-                        <li>Торговля оборудованием, пришедшим в РФ <span>исключительно через официальные поставки</span>.</li>
-                        <li><span>Мы прекрасно понимаем</span>, что за оборудование продаем. Можем проконсультировать по функционалу, либо подобрать аналог.</li>
-                        <li><span>Оказываем полный комплекс услуг</span> по технической поддержке клиентов, а также проводим установку и настройку силами своего IT подразделения.</li>
-                        <li><span>Мы имеем собственный сервисный центр</span>, который осуществляет гарантийный ремонт оборудования.</li>
+                        <li>Торговля оборудованием, пришедшим в РФ <span>исключительно через официальные поставки</span>.
+                        </li>
+                        <li><span>Мы прекрасно понимаем</span>, что за оборудование продаем. Можем проконсультировать по
+                            функционалу, либо подобрать аналог.
+                        </li>
+                        <li><span>Оказываем полный комплекс услуг</span> по технической поддержке клиентов, а также
+                            проводим установку и настройку силами своего IT подразделения.
+                        </li>
+                        <li><span>Мы имеем собственный сервисный центр</span>, который осуществляет гарантийный ремонт
+                            оборудования.
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="section">
+    <div class="section section_numbers">
         <div class="section-title">
             <div class="section-title_margin">
                 <span>Мы в цифрах</span>
@@ -666,7 +741,9 @@
                 <span>25 профильных специалистов, 5 менеджеров отдела продаж</span>
             </div>
             <div class="numbers__item">
-                <div class="numbers__item-info numbers__item-info_column"><span class="item-info_fraction">2222</span><br> x <br><span class="item-info_fraction">100</span></div>
+                <div class="numbers__item-info numbers__item-info_column"><span
+                        class="item-info_fraction">2222</span><br> x <br><span class="item-info_fraction">100</span>
+                </div>
                 <span>2222 товара в каталоге среди 100 брендов</span>
             </div>
             <div class="numbers__item">
@@ -683,7 +760,7 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section section-rule">
         <div class="section-title">
             <div class="section-title_margin">
                 <span>Как с нами работать?</span>
@@ -734,31 +811,71 @@
                 лиц в сфере организации современной связи (в том числе Skype телефоны и SIP телефоны).
                 IP телефоны очень просты в использовании, так как применяется привычный всем, практически
                 естественный интерфейс обычного телефона. Для работы с ним не требуется каких-либо специальных
-                навыков или дополнительных операций: достаточно просто выполнить подключение и <a href="#">конфигурирование устройства</a>
-                 и положить его на то место, где ранее лежал ваш городской телефон. С этого момента
+                навыков или дополнительных операций: достаточно просто выполнить подключение и <a href="#">конфигурирование
+                устройства</a>
+                и положить его на то место, где ранее лежал ваш городской телефон. С этого момента
                 вы и ваши сотрудники можете свободно пользоваться дешевой и защищённой связью.
             </p>
-
         </div>
     </div>
-
 </div>
-
-
-
-
-
-
-<!--    <div class="section section_grey">-->
-<!--        <div class="section-title section-title">-->
-<!--            <div class="section-title_margin">-->
-<!--                <span>Наши ключевые бренды</span>-->
-<!--                <a href="#">Все бренды</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-
-
+<div class="footer-wrap">
+    <div class="bottom-navigation_adaptive">
+        <a href="#">Доставка и оплата</a>
+        <a href="#">Гарантии и возврат</a>
+        <a href="#">Техподдержка</a>
+        <a href="#">Контакты</a>
+    </div>
+    <div class="footer">
+        <div class="footer__copy">
+            <div class="copy__logo"><img src="./img/footer_logo.png" alt=""></div>
+            <span>
+                © ХомиРу, 2006-2016<br>
+                Оборудование и решения для VoIP
+            </span>
+            <span>
+                Перепечатка материалов возможна только с активной ссылкой на homy.ru
+            </span>
+        </div>
+        <div class="footer__address-block">
+            <span>г. Москва, Зеленоград, Панфиловский пр., дом 8, строение 1</span>
+            <a href="#">Схема проезда</a>
+        </div>
+        <div class="footer_navigation">
+            <a href="#">Доставка и оплата</a>
+            <a href="#">Гарантии и возврат</a>
+            <a href="#">Техподдержка</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="contacts contacts_white">
+            <div class="contacts__callback">
+                <div class="contacts__callback_content">
+                    <a href="#">Обратный<br/> звонок</a>
+                </div>
+            </div>
+            <div class="contacts__phones contacts__phones_footer">
+                <span class="callback-phone callback-phone_footer">+7 495 2-55-44-66</span>
+                <span class="work-time">(пн-пт с 9 до 18 ч)</span>
+                <span class="contact-phone"><span>+7 903 111-11-11</span></span>
+                <a href="#">info@homy.ru</a>
+                <div class="contacts__social">
+                    <a href="#"><img src="./img/icons/vk_icon.png" alt=""></a>
+                    <a href="#"><img src="./img/icons/facebook_icon.png" alt=""></a>
+                    <a href="#"><img src="./img/icons/twitter_icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explanation-block-wrap">
+        <div class="explanation-block">
+            <span>
+                Все описания и характеристики товаров носят информационный характер и могут отличаться от представленных в технической документации производителей.
+                Уточняйте информацию у наших менеджеров.
+            </span>
+            <img src="./img/counter.png" alt="">
+        </div>
+    </div>
+</div>
 
 <!--<script src="js/jquery.min.js"></script>-->
 <script src="js/main.js"></script>
@@ -767,11 +884,10 @@
 
 
 
-			
-			
-			
-		
-	
-			
 
-		
+
+
+
+
+
+
